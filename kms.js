@@ -27,7 +27,7 @@ const parseS3Uri = (uri) => {
   }
   return {
     Bucket: u.hostname,
-    Key: u.pathname
+    Key: u.pathname.substr(1)
   };
 };
 
